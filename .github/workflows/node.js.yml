@@ -17,3 +17,5 @@ jobs:
         with:
           node-version: '16.x'
       - run: npm run test:run
+        env: # Or as an environment variable
+          super_secret: ${{ secrets.SuperSecret }}
